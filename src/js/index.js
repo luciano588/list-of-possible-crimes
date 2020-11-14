@@ -6,15 +6,34 @@ import "../assets/img/4geeks.ico";
 import "../style/index.scss";
 
 window.onload = function() {
-  let pronoun = ["the", "our"];
-  let adj = ["great", "big"];
-  let noun = ["jogger", "racoon"];
+  let who = [
+    "Colonel Mustard",
+    "Professor Plum",
+    "Mr. Green",
+    "Mrs. White",
+    "Mrs. Peacock"
+  ];
+  let where = ["Hall", "Kitchen"];
+  let whepon = [
+    "Rope",
+    "Lead Pipe",
+    "Knife",
+    "Wrench",
+    "Candlestick",
+    "Revolver"
+  ];
   var finalstring = "";
 
-  for (let i = 0; i < pronoun.length; i++) {
-    for (let b = 0; b < adj.length; b++) {
-      for (let c = 0; c < noun.length; c++) {
-        finalstring += pronoun[i] + adj[b] + noun[c] + ".com" + "<br>";
+  for (let i = 0; i < who.length; i++) {
+    for (let b = 0; b < where.length; b++) {
+      for (let c = 0; c < whepon.length; c++) {
+        finalstring +=
+          who[i] +
+          " killed Miss Scarlet at " +
+          where[b] +
+          " Using " +
+          whepon[c] +
+          "<br>";
       }
     }
   }
